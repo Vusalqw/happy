@@ -323,7 +323,7 @@ function noTime() {
 
     document.getElementById("s1").classList.add("sorry");
     document.getElementById("ask").textContent =
-        ".";
+        "Sorry.";
 
     setTimeout(() => {
         window.close();
