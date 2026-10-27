@@ -1,1 +1,73 @@
-test
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Ad günün mübarək!</title>
+</head>
+<body>
+<div id="stars"></div>
+
+<section class="screen active" id="s0"><div class="content">
+  <div class="birthday-mark"><span>✦</span></div>
+  <div class="small">GİRİŞ</div>
+  <h1>Adın nədir?</h1>
+  <p></p>
+  <div class="input-wrap">
+    <input type="text" id="nameInput" class="name-input" placeholder="Adını yaz..." autocomplete="off">
+    <div class="error" id="error"></div>
+  </div>
+  <button class="btn" onclick="enterSite()">Daxil ol ✨</button>
+  
+  <div class="shutdown-info" id="shutdownText"></div>
+
+  <div class="expire-notice">
+    <img src="./icons8-hourglass.gif" alt="Hourglass">
+    <span>bitişə qalan <span id="countdown">00:00:00</span></span>
+  </div>
+</div></section>
+
+<section class="screen" id="s1"><div class="content">
+  <div class="small">SƏNİN ÜÇÜN</div><h1>Kiçik bir şey<br>hazırladım...</h1>
+  <p id="ask">Bir neçə dəqiqəni ayıra bilərsən?</p>
+  <div class="choices">
+    <button class="btn" onclick="hasTimeChoice()">Ayıra bilərəm ✨</button>
+    <button class="btn" onclick="noTime()">Vaxtım yoxdur</button>
+  </div>
+</div></section>
+
+<section class="screen" id="s3"><div class="content">
+  <div class="birthday-mark"><span>✦</span></div>
+  <h1 class="gradient">Ad günün<br>mübarək!</h1>
+  <p id="typing"></p><button class="btn" onclick="next(4)">Davam et</button>
+</div></section>
+
+<section class="screen" id="s4"><div class="content">
+  <h1 style="font-size:38px" id="msgTitle">Mesaj</h1>
+  <div class="message"><p>
+    Düzünü desəm, nə deyəcəyimi tam bilmirəm. Bəlkə də çox tez-tez rastlaşmadığım üçündür.<br>
+    İlk dəfədi birinin ad gününü bu qədər ürəkdən təbrik edirəm.<br>
+    Arzu edirəm ki, yeni yaşında hər şey ürəyincə olsun. Həmişə üzün gülsün, özünü yaxşı hiss edəsən(deyis). Qarşına səni sevindirən, sənə xoş anlar yaşadan gözəl şeylər çıxsın.<br>
+    Bütün arzularının gerçəkləşməsi diləyi ilə. Ad günün mübarək!<br>
+    Vaxt ayırıb oxuduğun üçün təşəkkür edirəm.<br>
+  </p></div>
+  <button class="btn" onclick="next(6)">Davam et</button>
+</div></section>
+
+<section class="screen" id="s6"><div class="content">
+  <div class="birthday-mark"><span>♡</span></div>
+  <h1 class="gradient">Gözəl günlərin <br>çox olsun.</h1>
+  <p>Ümid edirəm bu yeni yaşın<br>ürəyindən keçən gözəlliklərlə dolu olar.</p>
+  <button class="btn" onclick="restart()">Yenidən bax ↺</button>
+</div></section>
+
+<section class="screen" id="sExpired"><div class="content">
+  <img class="expired-hourglass" src="icons8-hourglass-100.png" alt="Vaxt bitdi">
+  <h1>Vaxt bitdi</h1>
+  <p>Bu səhifənin vaxtı başa çatıb,<br>artıq davam etmək mümkün deyil.</p>
+</div></section>
+
+<script src="script.js"></script>
+</body>
+</html>
