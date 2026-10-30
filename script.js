@@ -8,7 +8,7 @@ const monthNamesAz = [
 // ==================== SAYTIN BAĞLANMA TARİXİ ====================
 const targetYear = new Date().getFullYear();
 const targetMonth = 10; // 9 = Oktyabr
-const targetDay = 3;
+const targetDay = 4;
 const targetHour = 0;
 const targetMin = 0;
 const targetSec = 0;
